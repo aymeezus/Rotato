@@ -1,2 +1,17 @@
-bruh I have succesfully set up the repositorygit pull!
- adds to end???
+So to set up git on your computer, pretty much follow the links exactly on the "Connecting to GitHUb with SSH' tutorial page. There's somethings that are kinda confusing, but I can explain somethings: So first check wether or not you have an SSH key already, if you do or do not just overwrite the old one you had by following the 'generate a new key' (step 2) process (it will ask you if you want to overwite it [generally in the default location]). If you dont want to overwrite it, then idk lol. 
+Make sure to do the 'Adding your SSH key to the SSH-agent' step, because then you wont have to always enter your GitHub account inormation whenever you want to push something onto the repo. (I just opted to manually start the agent, as opposed to embedding the process into git bash). 
+Then just go to the next step of 'Adding a new SSH key to your GitHub', that one is self explanatory. and then simply finish with doing the last step check.
+So you're not technically done there, bc you still have to clone your repo to some folder/directory on your comp. So to do that just make a folder where ever you want on your computer, then make your way to that folder using the git command line (for me I have git bash), then type 'git clone https://github.com/aymeezus/Rotato.git'. So that you could push/pull things from this repo.
+
+You have any questions, lmk.
+
+Also common git (linux) commands are:
+
+cd= change directory (ex: cd documents, cd rotato, cd .. [goes up one directory], cd [returns to root directory]
+ls = lists all files and folders in your current directory
+cat = idk what it stands for, but it will print out the text of a file (EX: cat README.txt)
+echo = prints text into a specified file (ex: echo "this is a test" > README.txt; this creates the file with specified name and type (or could ommit the extension; if you want to append text to an existing file use '>>' instead of '>'.
+touch = creates a new file (can ommit extension)
+mkdir = make directory = creates a new folder, with specified name, in current directory (ex: mkdir RotatoFolderExtras)
+rm = remove = deletes a specified file (ex: rm README.txt)
+to delete a specified folder/directory, use the '-r' flag (ex: rm -r RotatoFolderExtras)
